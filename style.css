@@ -1,0 +1,72 @@
+.clock {
+  border: 5px solid red;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: lightsalmon;
+
+  position: relative;
+  padding: 20px;
+  margin: 200px;
+
+}
+
+h1 {
+  position: absolute;
+  width: 4px;
+height: 180px;
+position: absolute;
+margin-left: 175px;
+margin-top: 35px;
+
+}
+
+.seconds {
+
+background-color: lightgrey;
+width: 4px;
+height: 180px;
+position: absolute;
+margin-left: 198px;
+margin-top: 20px;
+animation: rotate 60s infinite linear;
+}
+
+.minutes {
+
+background-color: lightgrey;
+width: 8px;
+height: 140px;
+position: absolute;
+margin-left: 197px;
+margin-top: 60px;
+animation: rotate 150s infinite linear;
+
+}
+
+.hours {
+
+background-color: lightgrey;
+width: 12px;
+height: 120px;
+position: absolute;
+margin-left: 196px;
+margin-top: 80px;
+animation: rotate 180s infinite linear;
+
+
+}
+
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+    transform-origin: center bottom;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center bottom;
+  }
+}
